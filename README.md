@@ -1,85 +1,58 @@
-# Pruebas Unitarias - Sistema de Login
+Plataforma para Optimización de Trayectorias Académicas
+Implementación de Pruebas Unitarias
 
-## Descripción
+Estudiante: Ashley Classe
+Institución: Universidad Iberoamericana
+Asignatura: Calidad y Pruebas de Software
 
-Este proyecto implementa pruebas unitarias para un sistema de autenticación utilizando Python y pytest.
+Descripción
 
-El objetivo es validar el correcto funcionamiento del proceso de inicio de sesión.
+Este repositorio contiene la implementación de pruebas unitarias para la Plataforma para Optimización de Trayectorias Académicas.
 
----
+El objetivo es validar la correcta funcionalidad de la lógica académica del sistema, específicamente:
 
-## Framework utilizado
+Registro de materias con validación de prerrequisitos
 
-pytest
+Simulación de semestre respetando límite de créditos
 
----
+Las pruebas fueron desarrolladas utilizando pytest en Python.
 
-## Casos de uso probados
+Casos de Uso Cubiertos
+Registro de Materias
 
-### Caso de uso 1: Login exitoso
+Permite registrar materias cuando se cumplen prerrequisitos.
 
-Archivo:
+Bloquea el registro si no se cumplen.
 
-test_login_exitoso
+Maneja excepciones correctamente.
 
-Propósito:
+Simulación Académica
 
-Validar que el sistema permita el acceso con credenciales correctas.
+Controla el límite máximo de créditos.
 
-Resultado esperado:
+Valida escenarios límite (boundary testing).
 
-True
+Garantiza estabilidad en el cálculo de carga académica.
 
----
+Tecnologías Utilizadas
 
-### Caso de uso 2: Password incorrecto
-
-Archivo:
-
-test_password_incorrecto
-
-Propósito:
-
-Validar que el sistema deniegue el acceso con password incorrecto.
-
-Resultado esperado:
-
-False
-
----
-
-### Caso de uso 3: Usuario incorrecto
-
-Archivo:
-
-test_usuario_incorrecto
-
-Propósito:
-
-Validar que el sistema deniegue el acceso con usuario incorrecto.
-
-Resultado esperado:
-
-False
-
----
-
-## Ejecución de pruebas
-
-Instalar pytest:
-
-pip install pytest
-
-Ejecutar:
+Python
 
 pytest
 
-Resultado esperado:
+Git
 
-3 passed
+Ejecución
 
----
+Instalar dependencias:
 
-## Autor
+pip install -r requirements.txt
 
-Ashley CLasse 
+
+Ejecutar pruebas:
+
+pytest
+
+Propósito Académico
+
+Este proyecto demuestra la aplicación de pruebas unitarias para asegurar calidad, detección temprana de errores y validación de reglas de negocio en un sistema académico.
